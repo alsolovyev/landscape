@@ -16,7 +16,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center overflow-hidden"
+      contentEditable
+    >
       {/* Background Images */}
       <div className="absolute inset-0">
         <AnimatePresence>
@@ -55,7 +58,7 @@ export default function Hero() {
       >
         <div className="bg-white/10 backdrop-blur-xl border border-white/30 rounded-2xl p-6 min-w-[200px] shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
           <div className="text-4xl font-bold text-white mb-1">500+</div>
-          <div className="text-white/70 text-sm mb-4">Satisfied Clients</div>
+          <div className="text-white/70 text-sm mb-4">Счастливых клиентов</div>
           <div className="flex gap-2">
             <div className="w-10 h-10 rounded-full border-2 border-white/30 flex items-center justify-center">
               <Users className="w-4 h-4 text-white/60" />
@@ -90,9 +93,9 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="text-5xl md:text-7xl lg:text-6xl font-light text-white leading-[1.1] tracking-tight mb-6"
           >
-            Transforming Spaces Into
+            Превращаем пространства в
             <br />
-            <span className="font-medium">Living Art</span>
+            <span className="font-medium">живое искусство</span>
           </motion.h1>
 
           <motion.p
@@ -101,9 +104,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed font-light"
           >
-            We create extraordinary outdoor environments that harmonize
-            architecture, nature, and lifestyle. Each project is a unique
-            masterpiece crafted with precision and passion.
+            Мы создаём исключительные outdoor-пространства, где архитектура,
+            природа и стиль жизни сливаются воедино. Каждый проект — уникальный
+            шедевр.
           </motion.p>
 
           <motion.div
@@ -116,14 +119,14 @@ export default function Hero() {
               size="lg"
               className="bg-white text-[#1a3a2f] hover:bg-white/90 rounded-full px-8 py-6 text-base font-medium"
             >
-              Get Started
+              Услуги
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 rounded-full px-8 py-6 text-base font-medium"
             >
-              Explore Projects
+              Проекты
             </Button>
           </motion.div>
         </div>
