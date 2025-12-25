@@ -13,39 +13,39 @@ import GlassCard from "../GlassCard";
 const services = [
   {
     icon: Palette,
-    title: "Landscape Design",
+    title: "Формирование рельефа",
     description:
-      "Bespoke design concepts that blend aesthetics with functionality, creating outdoor spaces that inspire.",
+      "Работа с грунтом и высотами, создающая идеальную основу для архитектуры и будущего ландшафта.",
   },
   {
     icon: TreeDeciduous,
-    title: "Garden Architecture",
+    title: "Подпорные конструкции",
     description:
-      "Structural elements and hardscaping that provide the foundation for stunning natural environments.",
+      "Эстетичные и надёжные подпорные стены, подчёркивающие рельеф и обеспечивающие долговечность пространства.",
   },
   {
     icon: Droplets,
-    title: "Water Features",
+    title: "Дренажные системы",
     description:
-      "Custom fountains, ponds, and water installations that bring tranquility and movement to your space.",
+      "Продуманные решения для отвода воды, защищающие участок и сохраняющие его функциональность в любую погоду.",
   },
   {
     icon: Sun,
-    title: "Outdoor Lighting",
+    title: "Премиальное мощение",
     description:
-      "Sophisticated lighting design that transforms landscapes into magical evening experiences.",
+      "Точные линии, натуральные материалы и безупрочная укладка, формирующие комфорт пространства.",
   },
   {
     icon: Compass,
-    title: "Master Planning",
+    title: "Водоёмы и озеленение",
     description:
-      "Comprehensive site analysis and long-term planning for estates and commercial properties.",
+      "Декоративные водоёмы, автоматический полив и гармоничное озеленение, создающие живую и сбалансированную среду.",
   },
   {
     icon: Flower2,
-    title: "Planting Design",
+    title: "Ландшафтные ограждения",
     description:
-      "Curated plant palettes that ensure year-round beauty, sustainability, and ecological balance.",
+      "Современные заборы и ограждения, объединяющие приватность, безопасность и архитектурную выразительность.",
   },
 ];
 
@@ -74,8 +74,8 @@ export default function Services() {
             Ландшафтные <span className="font-medium">Услуги</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg font-light">
-            From initial concept to final installation, we provide comprehensive
-            landscape solutions tailored to your unique vision.
+            От первого замысла до безупречной реализации мы создаём комплексные
+            ландшафтные решения, отражающие ваше уникальное видение.
           </p>
         </motion.div>
 
