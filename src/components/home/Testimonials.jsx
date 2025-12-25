@@ -125,7 +125,7 @@ const ScrollingColumn = ({ testimonials, speed, direction = "up" }) => {
   ];
 
   return (
-    <div className="relative h-[600px] overflow-hidden">
+    <div className="relative h-[600px]">
       <motion.div
         animate={{
           y: direction === "up" ? [0, -33.33 + "%"] : [-33.33 + "%", 0],
@@ -174,7 +174,7 @@ export default function Testimonials() {
         </motion.div>
 
         {/* Scrolling Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-hidden">
           {/* Column 1 - Speed: 30s */}
           <div className="hidden lg:block">
             <ScrollingColumn testimonials={column1} speed={30} />
@@ -192,4 +192,3 @@ export default function Testimonials() {
     </section>
   );
 }
-
