@@ -40,7 +40,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-[#f8f7f4] relative overflow-hidden">
+    <section
+      className="py-24 md:py-32 bg-[#f8f7f4] relative overflow-hidden"
+      id="contact"
+    >
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#2d5a47]/5 to-transparent" />
 

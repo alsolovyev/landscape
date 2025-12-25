@@ -12,7 +12,10 @@ const stats = [
 
 export default function About() {
   return (
-    <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+    <section
+      className="py-24 md:py-32 bg-white relative overflow-hidden"
+      id="about"
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}

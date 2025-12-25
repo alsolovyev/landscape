@@ -1,44 +1,60 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Palette, TreeDeciduous, Droplets, Sun, Compass, Flower2 } from 'lucide-react';
-import GlassCard from '../GlassCard';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Palette,
+  TreeDeciduous,
+  Droplets,
+  Sun,
+  Compass,
+  Flower2,
+} from "lucide-react";
+import GlassCard from "../GlassCard";
 
 const services = [
   {
     icon: Palette,
     title: "Landscape Design",
-    description: "Bespoke design concepts that blend aesthetics with functionality, creating outdoor spaces that inspire."
+    description:
+      "Bespoke design concepts that blend aesthetics with functionality, creating outdoor spaces that inspire.",
   },
   {
     icon: TreeDeciduous,
     title: "Garden Architecture",
-    description: "Structural elements and hardscaping that provide the foundation for stunning natural environments."
+    description:
+      "Structural elements and hardscaping that provide the foundation for stunning natural environments.",
   },
   {
     icon: Droplets,
     title: "Water Features",
-    description: "Custom fountains, ponds, and water installations that bring tranquility and movement to your space."
+    description:
+      "Custom fountains, ponds, and water installations that bring tranquility and movement to your space.",
   },
   {
     icon: Sun,
     title: "Outdoor Lighting",
-    description: "Sophisticated lighting design that transforms landscapes into magical evening experiences."
+    description:
+      "Sophisticated lighting design that transforms landscapes into magical evening experiences.",
   },
   {
     icon: Compass,
     title: "Master Planning",
-    description: "Comprehensive site analysis and long-term planning for estates and commercial properties."
+    description:
+      "Comprehensive site analysis and long-term planning for estates and commercial properties.",
   },
   {
     icon: Flower2,
     title: "Planting Design",
-    description: "Curated plant palettes that ensure year-round beauty, sustainability, and ecological balance."
-  }
+    description:
+      "Curated plant palettes that ensure year-round beauty, sustainability, and ecological balance.",
+  },
 ];
 
 export default function Services() {
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-b from-[#f8f7f4] to-white relative overflow-hidden">
+    <section
+      className="py-24 md:py-32 bg-gradient-to-b from-[#f8f7f4] to-white relative overflow-hidden"
+      id="services"
+    >
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#2d5a47]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#8b7355]/5 rounded-full blur-3xl" />

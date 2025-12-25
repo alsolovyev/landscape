@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowUpRight, X } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUpRight, X } from "lucide-react";
 
 const projects = [
   {
@@ -8,50 +8,59 @@ const projects = [
     title: "Coastal Estate Gardens",
     category: "Residential",
     image: "3.jpg",
-    description: "A seamless blend of native coastal plants with contemporary design elements."
+    description:
+      "A seamless blend of native coastal plants with contemporary design elements.",
   },
   {
     id: 2,
     title: "Urban Rooftop Oasis",
     category: "Commercial",
     image: "2.jpg",
-    description: "Transforming city rooftops into lush, sustainable green spaces."
+    description:
+      "Transforming city rooftops into lush, sustainable green spaces.",
   },
   {
     id: 3,
     title: "Mediterranean Villa",
     category: "Residential",
     image: "5.jpg",
-    description: "Classic Mediterranean landscaping with modern water conservation."
+    description:
+      "Classic Mediterranean landscaping with modern water conservation.",
   },
   {
     id: 4,
     title: "Corporate Campus",
     category: "Commercial",
     image: "1.jpg",
-    description: "Biophilic design principles creating inspiring work environments."
+    description:
+      "Biophilic design principles creating inspiring work environments.",
   },
   {
     id: 5,
     title: "Private Zen Garden",
     category: "Residential",
     image: "5.jpg",
-    description: "Japanese-inspired meditation garden with traditional elements."
+    description:
+      "Japanese-inspired meditation garden with traditional elements.",
   },
   {
     id: 6,
     title: "Boutique Hotel Grounds",
     category: "Hospitality",
     image: "3.jpg",
-    description: "Creating memorable arrival experiences for luxury hospitality."
-  }
+    description:
+      "Creating memorable arrival experiences for luxury hospitality.",
+  },
 ];
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section className="py-24 md:py-32 bg-[#1a3a2f] relative overflow-hidden">
+    <section
+      className="py-24 md:py-32 bg-[#1a3a2f] relative overflow-hidden"
+      id="portfolio"
+    >
       {/* Glass Orbs */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#2d5a47]/30 rounded-full blur-3xl" />
@@ -71,8 +80,8 @@ export default function Portfolio() {
             Featured <span className="font-medium">Projects</span>
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto text-lg font-light">
-            Explore our collection of award-winning landscapes that showcase
-            our commitment to excellence and innovation.
+            Explore our collection of award-winning landscapes that showcase our
+            commitment to excellence and innovation.
           </p>
         </motion.div>
 
