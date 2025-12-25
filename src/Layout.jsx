@@ -122,16 +122,19 @@ export default function Layout({ children, currentPageName }) {
             >
               <div className="px-6 py-6 space-y-4">
                 {navLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.label}
-                    to="#"
+                    href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
                     className="block text-[#1a3a2f] text-lg font-medium"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
-                <Button className="w-full bg-[#1a3a2f] text-white rounded-full mt-4">
+                <Button
+                  onClick={() => setDrawerOpen(true)}
+                  className="w-full bg-[#1a3a2f] text-white rounded-full mt-4"
+                >
                   Book Consultation
                 </Button>
               </div>
