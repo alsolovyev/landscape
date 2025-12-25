@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 
 function App() {
   return (
-    <Layout>
+    <Layout currentPageName="Home">
       <Home />
     </Layout>
   );
