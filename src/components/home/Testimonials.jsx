@@ -8,8 +8,7 @@ const testimonials = [
     id: 1,
     name: "Alexandra Reynolds",
     role: "Private Estate Owner",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "They transformed our property into an absolute paradise. The attention to detail and understanding of our vision exceeded all expectations.",
     rating: 5,
@@ -18,8 +17,7 @@ const testimonials = [
     id: 2,
     name: "Michael Chen",
     role: "Hotel Developer",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "Working with this team elevated our boutique hotel's guest experience tremendously. The landscape has become one of our most photographed features.",
     rating: 5,
@@ -28,8 +26,7 @@ const testimonials = [
     id: 3,
     name: "Sarah Mitchell",
     role: "Architect",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "As an architect, I'm particular about design partners. Their collaborative approach and respect for architectural context is exceptional.",
     rating: 5,
@@ -38,8 +35,7 @@ const testimonials = [
     id: 4,
     name: "David Park",
     role: "Homeowner",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "From concept to completion, they delivered beyond expectations. Our garden is now the centerpiece of our home.",
     rating: 5,
@@ -48,8 +44,7 @@ const testimonials = [
     id: 5,
     name: "Emma Thompson",
     role: "Interior Designer",
-    image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "Their ability to seamlessly blend indoor and outdoor spaces is remarkable. True artists in their field.",
     rating: 5,
@@ -58,8 +53,7 @@ const testimonials = [
     id: 6,
     name: "James Wilson",
     role: "Restaurant Owner",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "The outdoor dining area they created has become our restaurant's signature feature. Guests love it!",
     rating: 5,
@@ -68,8 +62,7 @@ const testimonials = [
     id: 7,
     name: "Lisa Anderson",
     role: "Corporate Executive",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "Professional, creative, and reliable. They transformed our corporate campus into a peaceful oasis.",
     rating: 5,
@@ -78,8 +71,7 @@ const testimonials = [
     id: 8,
     name: "Robert Martinez",
     role: "Real Estate Developer",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "Their landscape designs have significantly increased property values. A valuable investment partner.",
     rating: 5,
@@ -88,8 +80,7 @@ const testimonials = [
     id: 9,
     name: "Jennifer Lee",
     role: "Boutique Owner",
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&q=80",
+    image: "avatar.jpg",
     quote:
       "The garden entrance they designed has become an Instagram sensation. Perfect for our brand image.",
     rating: 5,
