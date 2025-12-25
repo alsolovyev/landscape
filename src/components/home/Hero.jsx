@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, MapPin, ArrowUpRight, Users } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, MapPin, ArrowUpRight, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const heroImages = [
-  "hero-2.jpg",
-  "hero-1.jpg",
-  "hero-3.jpg"
-];
+const heroImages = ["hero-2.jpg", "hero-1.jpg", "hero-3.jpg"];
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,27 +20,28 @@ export default function Hero() {
       {/* Background Images */}
       <div className="absolute inset-0">
         <AnimatePresence>
-          {heroImages.map((img, index) => (
-            index === currentImageIndex && (
-              <motion.div
-                key={img}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.5 }}
-                className="absolute inset-0"
-              >
-                <motion.img
-                  src={img}
-                  alt="Garden landscape"
-                  className="w-full h-full object-cover"
-                  initial={{ scale: 1 }}
-                  animate={{ scale: 1.05 }}
-                  transition={{ duration: 5, ease: "linear" }}
-                />
-              </motion.div>
-            )
-          ))}
+          {heroImages.map(
+            (img, index) =>
+              index === currentImageIndex && (
+                <motion.div
+                  key={img}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1.5 }}
+                  className="absolute inset-0"
+                >
+                  <motion.img
+                    src={img}
+                    alt="Garden landscape"
+                    className="w-full h-full object-cover"
+                    initial={{ scale: 1 }}
+                    animate={{ scale: 1.05 }}
+                    transition={{ duration: 5, ease: "linear" }}
+                  />
+                </motion.div>
+              ),
+          )}
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
       </div>
@@ -104,9 +101,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed font-light"
           >
-            We create extraordinary outdoor environments that harmonize architecture,
-            nature, and lifestyle. Each project is a unique masterpiece crafted with
-            precision and passion.
+            We create extraordinary outdoor environments that harmonize
+            architecture, nature, and lifestyle. Each project is a unique
+            masterpiece crafted with precision and passion.
           </motion.p>
 
           <motion.div
@@ -148,9 +145,12 @@ export default function Hero() {
               <ArrowUpRight className="w-5 h-5 text-white" />
             </button>
           </div>
-          <h3 className="text-xl font-semibold text-white mb-2">Hachioji Garden</h3>
+          <h3 className="text-xl font-semibold text-white mb-2">
+            Hachioji Garden
+          </h3>
           <p className="text-white/70 text-sm leading-relaxed">
-            We design Hachioji Garden as a part of our new Landscape Design Commission in the country.
+            We design Hachioji Garden as a part of our new Landscape Design
+            Commission in the country.
           </p>
         </div>
       </motion.div>
@@ -164,17 +164,19 @@ export default function Hero() {
       >
         <div className="flex items-center gap-6">
           <div className="text-white text-2xl font-light">
-            {String(currentImageIndex + 1).padStart(2, '0')}
+            {String(currentImageIndex + 1).padStart(2, "0")}
           </div>
           <div className="w-48 h-px bg-white/20 relative">
             <motion.div
-              animate={{ width: `${((currentImageIndex + 1) / heroImages.length) * 100}%` }}
+              animate={{
+                width: `${((currentImageIndex + 1) / heroImages.length) * 100}%`,
+              }}
               transition={{ duration: 0.5 }}
               className="absolute left-0 top-0 h-full bg-white"
             />
           </div>
           <div className="text-white/40 text-2xl font-light">
-            {String(heroImages.length).padStart(2, '0')}
+            {String(heroImages.length).padStart(2, "0")}
           </div>
         </div>
       </motion.div>
