@@ -81,7 +81,17 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <GlassCard key={service.title} delay={index * 0.1} className="p-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              key={service.title}
+              className="p-8 relative overflow-hidden rounded-2xl bg-white/40 backdrop-blur-xl border border-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.08)]"
+            >
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#2d5a47] to-[#1a3a2f] flex items-center justify-center mb-6 shadow-lg shadow-[#2d5a47]/20">
                 <service.icon className="w-6 h-6 text-white" />
               </div>
@@ -91,7 +101,7 @@ export default function Services() {
               <p className="text-gray-600 font-light leading-relaxed">
                 {service.description}
               </p>
-            </GlassCard>
+            </motion.div>
           ))}
         </div>
       </div>
