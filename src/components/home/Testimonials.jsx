@@ -6,85 +6,76 @@ import GlassCard from "../GlassCard";
 const testimonials = [
   {
     id: 1,
-    name: "Alexandra Reynolds",
-    role: "Private Estate Owner",
-    image: "avatar.jpg",
-    quote:
-      "They transformed our property into an absolute paradise. The attention to detail and understanding of our vision exceeded all expectations.",
-    rating: 5,
+    name: "Романов Максим",
+    role: "Владелец частного дома",
+    image: "avatar-1.jpg",
+    quote: "Они превратили нашу территорию в настоящий рай. Внимание к деталям и понимание нашего видения превзошли все ожидания.",
+    rating: 5
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Hotel Developer",
-    image: "avatar.jpg",
-    quote:
-      "Working with this team elevated our boutique hotel's guest experience tremendously. The landscape has become one of our most photographed features.",
-    rating: 5,
+    name: "Черкасов Ярослав",
+    role: "Девелопер отелей",
+    image: "avatar-4.jpg",
+    quote: "Работа с этой командой значительно улучшила впечатления гостей нашего бутик-отеля. Ландшафт стал одной из самых фотографируемых особенностей.",
+    rating: 5
   },
   {
     id: 3,
-    name: "Sarah Mitchell",
-    role: "Architect",
-    image: "avatar.jpg",
-    quote:
-      "As an architect, I'm particular about design partners. Their collaborative approach and respect for architectural context is exceptional.",
-    rating: 5,
+    name: "Овсянникова Виктория",
+    role: "Архитектор",
+    image: "avatar-2.jpg",
+    quote: "Как архитектор, я требовательна к партнерам по дизайну. Их совместный подход и уважение к архитектурному контексту исключительны.",
+    rating: 5
   },
   {
     id: 4,
-    name: "David Park",
-    role: "Homeowner",
-    image: "avatar.jpg",
-    quote:
-      "From concept to completion, they delivered beyond expectations. Our garden is now the centerpiece of our home.",
-    rating: 5,
+    name: "Осипов Фёдор",
+    role: "Домовладелец",
+    image: "avatar-7.jpg",
+    quote: "От концепции до завершения они превзошли ожидания. Наш сад теперь является центральным элементом нашего дома.",
+    rating: 5
   },
   {
     id: 5,
-    name: "Emma Thompson",
-    role: "Interior Designer",
-    image: "avatar.jpg",
-    quote:
-      "Their ability to seamlessly blend indoor and outdoor spaces is remarkable. True artists in their field.",
-    rating: 5,
+    name: "Демидова Варвара",
+    role: "Дизайнер интерьеров",
+    image: "avatar-3.jpg",
+    quote: "Их способность органично сочетать внутренние и внешние пространства замечательна. Настоящие мастера своего дела.",
+    rating: 5
   },
   {
     id: 6,
-    name: "James Wilson",
-    role: "Restaurant Owner",
-    image: "avatar.jpg",
-    quote:
-      "The outdoor dining area they created has become our restaurant's signature feature. Guests love it!",
-    rating: 5,
+    name: "Черкасова Александра",
+    role: "Владелец ресторана",
+    image: "avatar-5.jpg",
+    quote: "Открытая обеденная зона, которую они создали, стала визитной карточкой нашего ресторана. Гости в восторге!",
+    rating: 5
   },
   {
     id: 7,
-    name: "Lisa Anderson",
-    role: "Corporate Executive",
-    image: "avatar.jpg",
-    quote:
-      "Professional, creative, and reliable. They transformed our corporate campus into a peaceful oasis.",
-    rating: 5,
+    name: "Беляева Мария Вячеславовна",
+    role: "Топ-менеджер",
+    image: "avatar-6.jpg",
+    quote: "Профессионально, креативно и надежно. Они превратили наш корпоративный кампус в мирный оазис.",
+    rating: 5
   },
   {
     id: 8,
-    name: "Robert Martinez",
-    role: "Real Estate Developer",
+    name: "Захарова Елизавета",
+    role: "Девелопер недвижимости",
     image: "avatar.jpg",
-    quote:
-      "Their landscape designs have significantly increased property values. A valuable investment partner.",
-    rating: 5,
+    quote: "Их ландшафтные проекты значительно повысили стоимость недвижимости. Ценный инвестиционный партнер.",
+    rating: 5
   },
   {
     id: 9,
-    name: "Jennifer Lee",
-    role: "Boutique Owner",
-    image: "avatar.jpg",
-    quote:
-      "The garden entrance they designed has become an Instagram sensation. Perfect for our brand image.",
-    rating: 5,
-  },
+    name: "Дементьева Екатерина",
+    role: "Владелица бутика",
+    image: "avatar-8.jpg",
+    quote: "Вход в сад, который они спроектировали, стал сенсацией в Instagram. Идеально подходит для имиджа нашего бренда.",
+    rating: 5
+  }
 ];
 
 // Split testimonials into 3 columns
@@ -100,7 +91,7 @@ const TestimonialCard = ({ testimonial }) => (
       ))}
     </div>
     <p className="text-gray-700 text-sm leading-relaxed mb-4">
-      "{testimonial.quote}"
+      {testimonial.quote}
     </p>
     <div className="flex items-center gap-3">
       <img
