@@ -5,6 +5,7 @@ import Portfolio from "@/components/home/Portfolio";
 import Contact from "@/components/home/Contact";
 import Testimonials from "@/components/home/Testimonials";
 import Pricing from "@/components/home/Pricing";
+import Footer from "@/components/home/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <Contact />
+      <Footer />
     </div>
   );
 }
