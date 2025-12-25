@@ -83,7 +83,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="hidden md:block">
             <Button
               onClick={() => setDrawerOpen(true)}
-              className={`rounded-full px-6 transition-all ${
+              className={`rounded-full px-6 transition-all cursor-pointer ${
                 scrolled
                   ? "bg-[#1a3a2f] text-white hover:bg-[#2d5a47]"
                   : "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20"
