@@ -5,12 +5,11 @@ import { Button } from "@/components/ui/button";
 import ConsultationDrawer from "@/components/ConsultationDrawer";
 
 const navLinks = [
-  { label: "Home", page: "Home", href: "#top" },
-  { label: "About", page: "Home", href: "#about" },
-  { label: "Services", page: "Home", href: "#services" },
-  { label: "Portfolio", page: "Home", href: "#portfolio" },
-  { label: "Contact", page: "Home", href: "#contact" },
-  { label: "Pricing", page: "Home", href: "#pricing" },
+  { label: "История", page: "Home", href: "#about" },
+  { label: "Сервисы", page: "Home", href: "#services" },
+  { label: "Проекты", page: "Home", href: "#portfolio" },
+  { label: "Контакты", page: "Home", href: "#contact" },
+  { label: "Цены", page: "Home", href: "#pricing" },
 ];
 
 export default function Layout({ children, currentPageName }) {
@@ -58,7 +57,7 @@ export default function Layout({ children, currentPageName }) {
                 scrolled ? "text-[#1a3a2f]" : "text-white"
               }`}
             >
-              Terra<span className="font-medium">Verde</span>
+              Landscape<span className="font-medium">Line</span>
             </span>
           </a>
 
@@ -89,7 +88,7 @@ export default function Layout({ children, currentPageName }) {
                   : "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20"
               }`}
             >
-              Book Consultation
+              Консультация
             </Button>
           </div>
 
