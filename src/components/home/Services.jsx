@@ -71,7 +71,7 @@ export default function Services() {
             Our Expertise
           </span>
           <h2 className="text-3xl md:text-5xl font-light text-[#1a3a2f] mb-6">
-            Services We <span className="font-medium">Offer</span>
+            Ландшафтные <span className="font-medium">Услуги</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg font-light">
             From initial concept to final installation, we provide comprehensive
