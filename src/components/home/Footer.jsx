@@ -3,24 +3,24 @@ import { motion } from 'framer-motion';
 import { Leaf, Instagram, Linkedin, Facebook, ArrowUpRight } from 'lucide-react';
 
 const footerLinks = {
-  services: [
-    "Landscape Design",
-    "Garden Architecture",
-    "Water Features",
-    "Master Planning"
+  "студия": [
+    "Истори",
+    "Проекты",
+    "Контакты",
+    "Цены"
   ],
-  company: [
-    "About Us",
-    "Our Team",
-    "Careers",
-    "Press"
+  "сервисы": [
+    "Формирование рельефа",
+    "Подпорные конструкции",
+    "Дренажные системы",
+    "Премиальное мощение"
   ],
-  resources: [
-    "Portfolio",
-    "Case Studies",
-    "Blog",
-    "FAQs"
-  ]
+  // resources: [
+  //   "Portfolio",
+  //   "Case Studies",
+  //   "Blog",
+  //   "FAQs"
+  // ]
 };
 
 const socialLinks = [
@@ -40,7 +40,7 @@ export default function Footer() {
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#2d5a47]/30 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-20 relative">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
@@ -48,12 +48,11 @@ export default function Footer() {
                 <Leaf className="w-5 h-5 text-white" />
               </div>
               <span className="text-2xl font-light tracking-tight">
-                Terra<span className="font-medium">Verde</span>
+                Landscape<span className="font-medium">Line</span>
               </span>
             </div>
             <p className="text-white/60 font-light leading-relaxed mb-6 max-w-sm">
-              Award-winning landscape architecture studio creating timeless
-              outdoor environments for discerning clients worldwide.
+              Создаём пространства на открытом воздухе, неподвластные времени, для искушённых клиентов.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -95,7 +94,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm font-light">
-            © 2024 TerraVerde Studio. All rights reserved.
+            © 2024 LandscapeLine Studio. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-white/40 hover:text-white/60 transition-colors">

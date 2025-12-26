@@ -157,10 +157,10 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <span className="text-[#2d5a47] text-sm font-medium tracking-widest uppercase mb-4 block">
-            Testimonials
+            отзывы
           </span>
           <h2 className="text-3xl md:text-5xl font-light text-[#1a3a2f]">
-            Client <span className="font-medium">Experiences</span>
+            Истории <span className="font-medium">клиентов</span>
           </h2>
         </motion.div>
 

@@ -4,10 +4,10 @@ import { Award, Users, Calendar, TreePine } from "lucide-react";
 import GlassCard from "../GlassCard";
 
 const stats = [
-  { icon: Calendar, value: "25+", label: "Years Experience" },
-  { icon: TreePine, value: "500+", label: "Projects Completed" },
-  { icon: Users, value: "50+", label: "Team Members" },
-  { icon: Award, value: "30+", label: "Awards Won" },
+  { icon: Calendar, value: "25+", label: "Лет опыта" },
+  { icon: TreePine, value: "500+", label: "Проектов" },
+  { icon: Users, value: "50+", label: "Команда" },
+  { icon: Award, value: "30+", label: "Наград" },
 ];
 
 export default function About() {
@@ -63,23 +63,23 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-[#2d5a47] text-sm font-medium tracking-widest uppercase mb-4 block">
-              About Us
+              история
             </span>
             <h2 className="text-3xl md:text-5xl font-light text-[#1a3a2f] mb-6 leading-tight">
-              Where Vision Meets
+              Гармония
               <br />
-              <span className="font-medium">Natural Beauty</span>
+              <span className="font-medium">идеи и природы</span>
             </h2>
             <p className="text-gray-600 text-lg font-light leading-relaxed mb-6">
-              Founded in 1998, our studio has grown from a small design practice
-              into an internationally recognized landscape architecture firm. We
-              believe that exceptional outdoor spaces are born from a deep
-              understanding of nature, architecture, and human experience.
+              Основанная в 1998 году, наша студия выросла из небольшого сервиса в
+              признанную компанию в области ландшафтной архитектуры. Мы убеждены,
+              что по-настоящему выдающиеся пространства рождаются из глубокого
+              понимания природы, архитектуры и человеческого опыта.
             </p>
             <p className="text-gray-600 text-lg font-light leading-relaxed mb-10">
-              Our multidisciplinary team of designers, horticulturists, and
-              craftspeople work collaboratively to create landscapes that are
-              not only beautiful but sustainable and enduring.
+              Наша команда дизайнеров, специалистов по озеленению и мастеров-практиков
+              работает сообща, создавая ландшафты, которые не только эстетичны,
+              но и устойчивы, функциональны и долговечны.
             </p>
 
             {/* Stats */}

@@ -10,17 +10,17 @@ import GlassCard from "../GlassCard";
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Visit Our Studio",
+    title: "Посетите наш офис",
     lines: ["450 Design Boulevard", "San Francisco, CA 94102"],
   },
   {
     icon: Phone,
-    title: "Call Us",
+    title: "Позвоните нам",
     lines: ["+1 (415) 555-0123", "Mon-Fri 9am-6pm PST"],
   },
   {
     icon: Mail,
-    title: "Email Us",
+    title: "Напиште нам",
     lines: ["hello@terraverde.studio", "projects@terraverde.studio"],
   },
 ];
@@ -56,14 +56,14 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <span className="text-[#2d5a47] text-sm font-medium tracking-widest uppercase mb-4 block">
-            Get in Touch
+            Свяжитесь с нами
           </span>
           <h2 className="text-3xl md:text-5xl font-light text-[#1a3a2f] mb-6">
-            Start Your <span className="font-medium">Project</span>
+            Начните свой <span className="font-medium">проект</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg font-light">
-            Ready to transform your outdoor space? Let's discuss your vision and
-            create something extraordinary together.
+            Готовы преобразить свой участок? Расскажите нам о своей идее — и мы вместе
+            создадим пространство, в которое захочется возвращаться снова и снова.
           </p>
         </motion.div>
 
@@ -127,11 +127,11 @@ export default function Contact() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-[#1a3a2f]">
-                      Full Name
+                      Полное имя
                     </Label>
                     <Input
                       id="name"
-                      placeholder="John Smith"
+                      placeholder="Иван Иванов"
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
@@ -141,7 +141,7 @@ export default function Contact() {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-[#1a3a2f]">
-                      Email Address
+                      Email адрес
                     </Label>
                     <Input
                       id="email"
@@ -158,11 +158,11 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <Label htmlFor="phone" className="text-[#1a3a2f]">
-                    Phone Number
+                    Номер телефона
                   </Label>
                   <Input
                     id="phone"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+7 (999) 123-45-67"
                     value={formData.phone}
                     onChange={(e) =>
                       setFormData({ ...formData, phone: e.target.value })
@@ -173,11 +173,11 @@ export default function Contact() {
 
                 <div className="space-y-2">
                   <Label htmlFor="message" className="text-[#1a3a2f]">
-                    Tell Us About Your Project
+                    Расскажите о вашем проекте
                   </Label>
                   <Textarea
                     id="message"
-                    placeholder="Describe your vision, property size, timeline, and any specific requirements..."
+                    placeholder="Опишите ваше видение, размер участка и любые особые требования..."
                     value={formData.message}
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
@@ -191,7 +191,7 @@ export default function Contact() {
                   size="lg"
                   className="w-full bg-gradient-to-r from-[#2d5a47] to-[#1a3a2f] hover:opacity-90 text-white rounded-xl h-14 text-base font-medium group"
                 >
-                  Send Message
+                  Отправить заявку
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </form>
