@@ -2,7 +2,7 @@ import Layout from "./Layout";
 import Home from "./Pages/Home";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { PenBox } from "lucide-react";
+import { PenBox, PenOff } from "lucide-react";
 
 function App() {
   const [isEditable, setIsEditable] = useState(false);
@@ -20,7 +20,7 @@ function App() {
         size="lg"
         className="fixed top-4 left-4 p-4 z-50"
       >
-        <PenBox />
+        {isEditable ? <PenBox /> : <PenOff />}
       </Button>
       <Home />
     </Layout>
