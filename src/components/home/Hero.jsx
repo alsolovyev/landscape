@@ -18,7 +18,6 @@ export default function Hero() {
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden"
-      contentEditable
     >
       {/* Background Images */}
       <div className="absolute inset-0">
@@ -116,18 +115,22 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <Button
+              asChild
               size="lg"
               className="bg-white text-[#1a3a2f] hover:bg-white/90 rounded-full px-8 py-6 text-base font-medium"
             >
-              Услуги
+              <a href="#pricing">Услуги</a>
             </Button>
+
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 rounded-full px-8 py-6 text-base font-medium"
             >
-              Проекты
+              <a href="#portfolio">Проекты</a>
             </Button>
+
           </motion.div>
         </div>
       </div>
