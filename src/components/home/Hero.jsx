@@ -103,9 +103,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed font-light"
           >
-            Мы создаём исключительные outdoor-пространства, где архитектура,
-            природа и стиль жизни сливаются воедино. Каждый проект — уникальный
-            шедевр.
+            Мы создаём исключительные пространства, где архитектура, природа
+            и стиль жизни сливаются воедино. Каждый проект — уникальный шедевр.
           </motion.p>
 
           <motion.div
