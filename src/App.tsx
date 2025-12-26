@@ -9,6 +9,7 @@ function App() {
 
   function toggleEditable() {
     setIsEditable((prev) => !prev);
+    // @ts-expect-error -_-
     document.body.contentEditable = !isEditable;
   }
 
